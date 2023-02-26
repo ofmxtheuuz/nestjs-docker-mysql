@@ -19,12 +19,12 @@ export class BookService {
   async insert(dto: create_book): Promise<Book> {
     const {name, description,release_year, category, author} = dto
     // insert book on mysql
-    return await this._r.create({
+    return await this._r.save(await this._r.create({
       name,
       description,
       release_year,
       category,
       author
-    })
+    }))
   }
 }
