@@ -15,7 +15,7 @@ export class AppController {
   async get(@Param("id") _id: number): Promise<Object> {
     return {code: 200, result: await this._s.get_one(_id)}
   }
-  @Post("insert")
+  @Post()
   async insert(@Body() dto: create_book): Promise<Object> {
     return { code: 201, result: await this._s.insert(dto)}
   }

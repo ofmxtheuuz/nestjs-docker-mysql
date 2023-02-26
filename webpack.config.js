@@ -1,9 +1,11 @@
 const path = require('path');
 
+
+// DONT USE
 module.exports = {
   mode: 'development',
   entry: {
-    index: './src/public/js/web.ts'
+    index: 'YOUR_INDEX_LOCATION'
   },
   output: {
     path: path.resolve(__dirname, 'release'),

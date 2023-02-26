@@ -1,1 +1,1 @@
-CREATE DATABASE "api_docker"
+CREATE DATABASE IF NOT EXISTS "api_docker"
